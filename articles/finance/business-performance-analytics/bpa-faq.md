@@ -164,7 +164,7 @@ let start = async () => {
   }
 
   if (hadErrors) {
-    throw new Error("Some solutions failed to uninstall");
+    throw new Error("Some solutions failed to uninstall. Retrying the script may fix this issue.");
   }
   console.info("BPA Solutions removed successfully");
 };
